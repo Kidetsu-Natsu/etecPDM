@@ -45,7 +45,7 @@ fun recebeAnos(ano: Int)
 	println("$ano equivalem a: ")
 	println("${ano * 12} meses")
 	println("${ano * 365} dias")
-	println("${ano * 8766} horas")
+	println("${ano * 365 * 24} horas")
 	println("${ano * 525960} minutos")
 	println("${ano * 31536000} segundos")
 
@@ -56,7 +56,7 @@ fun recebePalavra(palavra: String)
 {
 	var tamanho: String
 
-	tamanho = "A palavra $palavra tem  ${palavra.Length} caracteres"
+	tamanho = "A palavra $palavra tem  ${palavra.length.ToString()} caracteres"
 	println(tamanho)
 }
 
@@ -84,7 +84,7 @@ fun recebeStringParaConverter(textoParaConverter: String)
 }
 
 // EX 6
-fun funcaoEx2(palavra2: String) = {println("A palavra $palavra2 tem ${palavra.Length} caracteres")}
+fun funcaoEx2(palavra2: String) = {println("A palavra $palavra2 tem ${palavra.Length.ToString()} caracteres")}
 
 fun funcaoEx3(numero2: Int) = {println("$numero2 elevado ao cubo equivale a ${numero2 * numero2 * numero2}")}
 
